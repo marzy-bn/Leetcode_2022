@@ -3,10 +3,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        i = 0
-        end = len(nums)
-        while i != end:
-            if nums[i] == 0:
-                nums.remove(nums[i])
-                nums.append(0)
-            i += 1
+        move = 0
+        left = 0
+        while move < len(nums):
+            if nums[move] != 0:
+                temp = nums[left]
+                nums[left] = nums[move]
+                nums[move] = temp
+                left += 1
+            move += 1
+                
