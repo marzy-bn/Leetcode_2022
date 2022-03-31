@@ -9,11 +9,12 @@ class Solution:
             if arr[idx] == 0:
                 zero_count += 1
                 arr.insert(idx+1,0)
+                arr.pop()
                 idx += 1
             idx += 1
         
-        while zero_count != 0:
-            arr.pop()
-            zero_count -= 1
+        #while zero_count != 0:
+        #    arr.pop()
+        #    zero_count -= 1
         
         
