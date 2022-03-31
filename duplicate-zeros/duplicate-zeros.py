@@ -13,4 +13,3 @@ class Solution:
             arr.pop()
             zero_count -= 1
         
-        
