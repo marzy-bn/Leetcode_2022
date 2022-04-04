@@ -5,6 +5,4 @@ class Solution:
         for idx,letter in enumerate(arr):
             arr[idx] = letter.lower()
         out = ""
-        for letter in arr:
-            out += letter
-        return out
+        return out.join(arr)
