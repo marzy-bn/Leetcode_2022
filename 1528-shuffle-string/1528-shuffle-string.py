@@ -1,16 +1,10 @@
 class Solution:
     def restoreString(self, s: str, indices: List[int]) -> str:
-        htable = {}
         
-        i = 0
-        while i < len(s):
-            htable[indices[i]] = s[i]
-            i += 1
+        temp = list(s)
         
-        arr = list(s)
+        for idx,val in enumerate(s):
+            temp[indices[idx]] = val
         
-        for key in htable:
-            arr[key] = htable[key]
+        return ''.join(temp)
         
-        out = ""
-        return out.join(arr)
