@@ -1,6 +1,9 @@
 class Solution:
     def toLowerCase(self, s: str) -> str:
         
+        return s.lower()
+        
+        '''
         arr = list(s)
         
         for idx,letter in enumerate(arr):
@@ -8,3 +11,4 @@ class Solution:
         
         out = ""
         return out.join(arr)
+        '''
