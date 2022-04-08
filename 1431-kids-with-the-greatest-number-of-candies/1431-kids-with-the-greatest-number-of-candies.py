@@ -1,10 +1,5 @@
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
-        # n kids with candies
-        # interger array candies
-        # each candies[i] = number of candies the ith kid has
-        # extraCandies = number of extra candies you have
-        
         output = []
         max_c = 0
         for candy in candies:
