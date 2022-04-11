@@ -1,12 +1,13 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
-        nums.sort()
-        #[0 1 3]
-        if nums[-1] < len(nums):
-            return len(nums)
+        hset = set()
+        for idx in range(len(nums)+1):
+            hset.add(idx)
+        print(hset)
         idx = 0
         while idx < len(nums):
-            if idx != nums[idx]:
-                return idx
+            if nums[idx] in hset:
+                hset.remove(nums[idx])
             idx += 1
-        
+        return list(hset)[0]
+            
