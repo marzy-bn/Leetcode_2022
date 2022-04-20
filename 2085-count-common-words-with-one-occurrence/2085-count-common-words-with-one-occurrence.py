@@ -9,8 +9,6 @@ class Solution:
             elif word in occr1 and word not in seen1:
                 occr1.remove(word)
                 seen1.add(word)
-        print(occr1)
-        print(seen1)
         
         occr2 = set()
         seen2 = set()
@@ -21,8 +19,6 @@ class Solution:
             elif word in occr2 and word not in seen2:
                 occr2.remove(word)
                 seen2.add(word)
-        print(occr2)
-        print(seen2)
         
         c = 0
         for word1 in occr1:
