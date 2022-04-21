@@ -27,7 +27,4 @@ class Solution:
             count -= 1
         
         output += last
-        
-        
-        
         return output
