@@ -6,7 +6,7 @@ class Solution:
                 end = i
                 break
         if end != -1:
-            first = word[:i+1] 
+            first = word[:i+1]
             return first[::-1]  + word[i+1:]
         else:
             return word
