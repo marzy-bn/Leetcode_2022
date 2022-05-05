@@ -1,19 +1,12 @@
 class Solution:
     def makeFancyString(self, s: str) -> str:
         output = ""
-        for i,char in enumerate(s):
-            if i == 0:
-                output += char
-                continue
-            if i == len(s)-1:
-                output += char
-                break
-            prior = s[i-1]
-            after = s[i+1]
-            if prior == char and char == after:
-                continue
-            else:
-                output += char
+        if len(s) < 2:
+            return s
+        output += s[0] + s[1]
+        for x,y,z in zip(s,s[1:],s[2:]):
+            if not (x == y and y == z):
+                output += z
         return output
                 
             
