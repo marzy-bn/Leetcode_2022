@@ -8,8 +8,10 @@ class Solution:
             diff = abs(a-b)
             if diff == mini:
                 results.append([a,b])
+                #print("ppp",results)
             elif diff < mini:
                 mini = diff
                 results = [(a,b)]
+                #print("sss",results)
         return results
                 
